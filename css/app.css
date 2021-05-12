@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "vt323";
+  src: url("VT323-Regular.woff2") format("woff2");
+}
+
+body {
+    background-image: url(../images/folk-pattern.png);
+    background-repeat: repeat;
+    background-size: 350px;
+}
+
+.container {
+    padding: 10px;
+    max-width: 750px;
+    background-color: #f6f6f6;
+}
+
+.self-name {
+    font-family: "vt323"
+}
+
+.title-section {
+    border-bottom: 3px solid #ffb733;
+}
+
+.description-section {
+    margin-top: 2px;
+}
+
+.section-header {
+    font-family: "vt323"
+}
+
+
+.profile-pic {
+    width: 100px;
+}
+
+.links {
+    margin-top: 20px;
+}
+
+.toronto {
+    width: 500px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1.5em;
+}
