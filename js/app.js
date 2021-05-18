@@ -53,7 +53,7 @@ var CronSite = (function() {
 
         var accordionHtml = "<div class='accordion' id='" + accordionId + "'>";
 
-        skills.forEach(function(skill, index) {
+        skills.forEach(function(skill) {
             var skillTitle = skill["title"];
             var skillContent = skill["content"];
 
@@ -62,32 +62,17 @@ var CronSite = (function() {
 
             var itemHtml = "<div class='accordion-item'>";
 
-            if (index == 0) {
-                itemHtml += "<h2 class='accordion-header' id='" + headingId + "'>";
-                itemHtml += "<button class='accordion-button' type='button' data-bs-toggle='collapse' data-bs-target='#" + collapseId + "' aria-expanded='true' aria-controls='" + collapseId + "'>";
-                itemHtml += skillTitle;
-                itemHtml += "</button>";
-                itemHtml += "</h2>";
+            itemHtml += "<h2 class='accordion-header' id='" + headingId + "'>";
+            itemHtml += "<button class='accordion-button collapsed' type='button' data-bs-toggle='collapse' data-bs-target='#" + collapseId + "' aria-expanded='false' aria-controls='" + collapseId + "'>";
+            itemHtml += skillTitle;
+            itemHtml += "</button>";
+            itemHtml += "</h2>";
 
-                itemHtml += "<div id='" + collapseId + "' class='accordion-collapse collapse show' aria-labelledby='" + headingId + "'>";
-                itemHtml += "<div class='accordion-body'>";
-                itemHtml += "<span>" + skillContent + "</span>";
-                itemHtml += "</div>";
-                itemHtml += "</div>";
-            }
-            else {
-                itemHtml += "<h2 class='accordion-header' id='" + headingId + "'>";
-                itemHtml += "<button class='accordion-button collapsed' type='button' data-bs-toggle='collapse' data-bs-target='#" + collapseId + "' aria-expanded='false' aria-controls='" + collapseId + "'>";
-                itemHtml += skillTitle;
-                itemHtml += "</button>";
-                itemHtml += "</h2>";
-
-                itemHtml += "<div id='" + collapseId + "' class='accordion-collapse collapse' aria-labelledby='" + headingId + "'>";
-                itemHtml += "<div class='accordion-body'>";
-                itemHtml += "<span>" + skillContent + "</span>";
-                itemHtml += "</div>";
-                itemHtml += "</div>";
-            }
+            itemHtml += "<div id='" + collapseId + "' class='accordion-collapse collapse' aria-labelledby='" + headingId + "'>";
+            itemHtml += "<div class='accordion-body'>";
+            itemHtml += "<span>" + skillContent + "</span>";
+            itemHtml += "</div>";
+            itemHtml += "</div>";
 
             itemHtml += "</div>";
             accordionHtml += itemHtml;
