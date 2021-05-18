@@ -4,45 +4,71 @@
 }
 
 body {
-    background-image: url(../images/folk-pattern.png);
-    background-repeat: repeat;
-    background-size: 350px;
 }
 
 .container {
     padding: 10px;
-    max-width: 750px;
-    background-color: #f6f6f6;
+    max-width: 900px;
+    background-color: aquamarine;
 }
 
-.self-name {
+.header-brand-icon {
+    width: 100px;
+}
+
+.header-name {
     font-family: "vt323"
-}
-
-.title-section {
-    border-bottom: 3px solid #ffb733;
-}
-
-.description-section {
-    margin-top: 2px;
 }
 
 .section-header {
     font-family: "vt323"
 }
 
-
-.profile-pic {
-    width: 100px;
+.cover-photo{
+    width: 100%;
+    display: block;
 }
 
-.links {
-    margin-top: 20px;
+#introduction {
+    background-color: bisque;
 }
 
-.toronto {
-    width: 500px;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 1.5em;
+#knowledge {
+    background-color: cornflowerblue;
+}
+
+#contact {
+    background-color: darkseagreen;
+}
+
+#education {
+    background-color: lightskyblue;
+}
+
+.knowledge-quote {
+    background-color: thistle;
+}
+
+.knowledge-intro-paragraph {
+    background-color: tomato;
+}
+
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+}
+
+.top-resume {
+    float: right;
+    white-space: nowrap;
+    background-color: blueviolet;
+}
+
+.top-contact-link {
+    background-color: aqua;
+    display: inline-block;
+}
+
+.topbar {
 }

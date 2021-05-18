@@ -27,21 +27,23 @@
 
                 <!-- HEADER -->
                 <div class="row">
-                    <div class="col" id="topbar">
+                    <div class="d-flex">
+                        <img class="p-2" id="header-brand-icon" />
+                        <div class="p-2">
+                            <h1 id="header-name"></h1>
+                            <div class="lead" id="header-title"></div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- COVER PHOTO -->
                 <div class="row">
+                    <img class='img-responsive' id="cover-photo" src="" />
                     <div id="coverCarousel" class="carousel slide" data="bs-ride="carousel">
                         <div class="carousel-inner">
-                            <img class="d-block w-100" id="cover-photo" />
+                            <img src="images/western-pa-cropped.jpeg" class="d-block w-100" />
                             <div class="carousel-caption">
-                                <img id="header-brand-icon" />
-                                <div>
-                                    <h1 id="header-name"></h1>
-                                    <div class="lead" id="header-title"></div>
-                                </div>
+                                <h3></h3>
                             </div>
                         </div>
                     </div>
